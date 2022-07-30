@@ -123,13 +123,11 @@ def main():
                 box.draw(window, (100, 100, 100))
 
                 if box.queued:
-                    box.draw(window, (200, 0, 0))
+                    box.draw(window, (254, 40, 40))
                 if box.visited:
-                    box.draw(window, (0, 0, 200))
+                    box.draw(window, (65, 170, 200))
                 if box in path:
-                    box.draw(window, (0, 200, 0))
-
-
+                    box.draw(window, (40, 250, 0))
                 if box.start:
                     box.draw(window, (0, 200, 200))
                 if box.wall:
